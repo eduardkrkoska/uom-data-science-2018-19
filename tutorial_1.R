@@ -14,7 +14,7 @@
 # 1. Install and load libraries ----
 
 # Installing R packages
-install.packages("tidyverse")
+#install.packages("tidyverse") already installed
 
 # Loading R packages
 library("tidyverse")
@@ -43,8 +43,8 @@ skimr::skim(raw_data)
 
 # Selecting columns 
 
-raw_data %>%
-  dplyr::select()
+selected_data_4 <- raw_data %>%
+  dplyr::select(1:3)
 
 # Task:
 
